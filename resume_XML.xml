@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="resume">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="candidate">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="LastName" type="xs:string"/>
+							<xs:element name="PatronomicName" type="xs:string"/>
+							<xs:element name="Age" type="xs:AgeType">
+								<xs:simpleType>
+									<xs:restriction base="xs:AgeType">
+										<xs:minInclusive value="20"/>
+										<xs:maxExclusive value="65"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>	
+							<xs:element name="WorkPlace" type="xs:string"/>
+							<xs:element name="Post" type="xs:string"/>
+							<xs:element name="DateOfBirth">
+								<xs:simpleType>
+									<xs:restriction base="xs:Date">
+										<xs:minInclusive value="01.01.1947"/>
+										<xs:maxInclusive value="01.01.1992"/>
+									</xs:restriction>	
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Education">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="высшее|среднее"/>	
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Adress" type="xs:string"/>
+							<xs:element name="Phone">
+								<xs:simpleType>									
+										<xs:restriction base="xs:string">
+											<xs:pattern value="###-##-##"/>
+										</xs:restriction>									
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="FamilyStatus">
+								<xs:simpleType>									
+										<xs:restriction base="xs:string">
+											<xs:pattern value="женат|не женат|замужем|не замужем"/>										
+										</xs:restriction>								
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DesiredSalary" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

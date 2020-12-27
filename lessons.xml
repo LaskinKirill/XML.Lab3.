@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<lessons xmlns="tempuri.org/XMLSchema.xsd"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<item>
+		<namecourse>ООП и UML</namecourse>
+		<teacher>Осипов</teacher>
+		<lessonstime>18-30-21-50</lessonstime>
+		<DateStart>21.09.2020</DateStart>
+		<DateFinish>20.10.2020</DateFinish>
+	</item>
+	<item>
+		<namecourse>Язык C#</namecourse>
+		<teacher>Осипов</teacher>
+		<lessonstime>18-30-21-50</lessonstime>
+		<DateStart>21.10.2020</DateStart>
+		<DateFinish>15.11.2020</DateFinish>
+	</item>
+	<item>
+		<namecourse>Введение в БД</namecourse>
+		<teacher>Осетрова</teacher>
+		<lessonstime>18-30-21-50</lessonstime>
+		<DateStart>16.11.2020</DateStart>
+		<DateFinish>28.11.2020</DateFinish>
+	</item>
+	<item>
+		<namecourse>WindowsForms</namecourse>
+		<teacher>Смолянинов</teacher>
+		<lessonstime>18-30-21-50</lessonstime>
+		<DateStart>29.11.2020</DateStart>
+		<DateFinish>17.12.2020</DateFinish>
+	</item>
+</lessons>
